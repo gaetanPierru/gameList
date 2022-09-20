@@ -1,0 +1,13 @@
+.Gametype {
+    position: relative;
+    display: block;
+    width:30%;
+    float: left;
+    flex-direction: column;
+    
+}
+
+.h5 {
+    color: rgba(245, 9, 21, 0.596);
+    font-weight: bold;
+}

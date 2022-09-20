@@ -1,0 +1,24 @@
+.GameList {
+    position: relative;
+    display: block;
+    width:50%;
+    float: right;
+    background-color: gray;
+    border: 1px solid black;
+    border-radius: 10px 10px 0 0;
+}
+
+.button {
+    align-self: normal;
+    border: none;
+    background-color: unset;
+    font-size: 70px;
+    color: gray;
+}
+
+.h1 {
+    background-color: red;
+    margin: 0px;
+    border: 1px solid black;
+    border-radius: 10px 10px 0 0;
+}

@@ -1,0 +1,12 @@
+.Gametype {
+    position: relative;
+    display: block;
+    width:190px;
+    background-image: url("../public/Psykokwak.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: cadetblue;
+    border: 1px solid black;
+    border-radius: 10px;
+}

@@ -4,4 +4,9 @@ const nextConfig = {
   swcMinify: true,
 }
 
-module.exports = nextConfig
+module.exports = {
+  images: {
+    domains: ["media.rawg.io"],
+    formats: ["image/webp"]
+  }
+}

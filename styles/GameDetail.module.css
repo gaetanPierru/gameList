@@ -1,0 +1,60 @@
+.tag {
+    display: inline-block;
+    line-height: 19px;
+    padding: 0 7px;
+    color: #99daff;
+    background-color: rgba( 103, 193, 245, 0.2 );
+    box-shadow: none;
+    margin-right: 2px;
+    border-radius: 4px;
+    margin-bottom: 3px;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.conteneur {
+    display: flex;
+    gap: 0;
+    width: 400px;
+    flex: 1 1 100%;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    border: 2px solid #67c1f5;
+    border-radius: 10px;
+    background: #2c6a8f;
+    text-shadow: 1px 1px 2px #000000aa;
+    color: #fff;
+    position: relative;
+  align-items: center;
+
+}
+
+.title {
+    text-align: center;
+}
+
+.close {
+    border: 1px solid black;
+    background-color: none;
+    border-radius: 45px;
+    width: 20px;
+    display: block;
+    text-align: center;
+    font-size: large;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    cursor: pointer;
+}
+
+.description {
+    display: block;
+    max-width: 400px;
+    max-height: 200px;
+    overflow: auto;
+}
