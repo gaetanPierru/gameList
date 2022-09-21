@@ -8,6 +8,15 @@
 }
 
 .h5 {
-    color: rgba(245, 9, 21, 0.596);
+    color:  #99daff;
     font-weight: bold;
+    font-size: large;
+    width: 51%;
+    border: 1px solid black;
+    border-radius: 0 15px 15px 0;
+    background-color: rgba( 103, 193, 245, 0.2 );
+}
+
+.h5:hover{
+    color: #d0eeff;
 }

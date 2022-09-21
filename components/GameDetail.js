@@ -18,15 +18,28 @@ export default function GameDetail({ gameDescription, setDisplay }) {
 
   return (
     <>
+    
       <div className={Style.card}>
+        
         <div>
+          <p>Developpé par : <span className={Style.dev}>
+          {game.developers?.map(
+              (develop) => " " + develop.name
+            )}</span>
+          </p>
           <Image
-            src={gameDescription.background_image}
+            src={game.background_image_additional}
             alt=""
             width="400"
             height="270"
           />
+          
           <h1 className={Style.title}>{gameDescription.name}</h1>
+          <p>genres : 
+          {game.genres?.map(
+              (genre, index) => <p className={Style.genre} key={index}>{genre.name}</p>
+            )}
+          </p>
         </div>
         <div>
           <p>
@@ -40,6 +53,7 @@ export default function GameDetail({ gameDescription, setDisplay }) {
               (platform) => " " + platform.platform.name
             )}
           </p>
+            <div   className={Style.description}>{game.description_raw}</div>
           <div className={Style.conteneur}>
             tag:
             {gameDescription.tags.map((tag, index) =>
@@ -60,7 +74,6 @@ export default function GameDetail({ gameDescription, setDisplay }) {
             )}
           </div>
             <p>Date de sortie: {gameDescription.released}</p>
-            <div dangerouslySetInnerHTML={{ __html: game.description}} className={Style.description}/>
         </div>
       </div>
     </>

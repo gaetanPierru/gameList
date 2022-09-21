@@ -14,12 +14,30 @@
     text-overflow: ellipsis;
 }
 
+.genre {
+    display: inline-block;
+    line-height: 19px;
+    padding: 0 7px;
+    color: #99daff;
+    background-color: rgba(147, 203, 235, 0.637);
+    box-shadow: none;
+    margin-right: 2px;
+    border-radius: 4px;
+    margin-bottom: 3px;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .conteneur {
     display: flex;
     gap: 0;
     width: 400px;
     flex: 1 1 100%;
     flex-wrap: wrap;
+    overflow:hidden;
+    height: 200px;
 }
 
 .card {
@@ -55,6 +73,9 @@
 .description {
     display: block;
     max-width: 400px;
-    max-height: 200px;
-    overflow: auto;
+    font-size: 0.7em;
+}
+
+.dev {
+    font-weight: bold;
 }

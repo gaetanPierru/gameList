@@ -5,8 +5,71 @@
   justify-content: center;
   align-items: center;
   height: fit-content;
-  background-image: url("../public/test2.gif");
   background-repeat: no-repeat;
+}
+.img {
+  animation: roulade 1s infinite linear;
+}
+
+.div {
+  animation: move 4s infinite linear alternate;
+  position: relative;
+}
+.divContent {
+  height: 100%;
+  width: 100%;
+  background-image: url("../public/plaine.jpg");
+  border: 1px solid black;
+  border-radius: 40px;
+}
+
+@keyframes roulade {
+  from {
+    transform: rotate(360deg);
+  }
+}
+@keyframes move {
+  from {
+    transform: translateX(calc(100% - 80px));
+  }
+}
+
+.h1 {
+  text-align: center;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: #FC0 1px 0 10px;
+}
+
+.header {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.eevee {
+  width: 100%;
+  position: absolute;
+  display: block;
+  z-index: -1;
+  animation: walk 20s linear infinite;
+}
+
+@keyframes walk {
+  0% {
+    transform: translateX(-20vw);
+  }
+
+  49% {
+    transform: translateX(100vw);
+  }
+
+  50% {
+    transform: translateX(80vw) rotateY(180deg);
+  }
+
+  100% {
+    transform: translateX(-100vw) rotateY(180deg);
+  }
 }
 
 @media (max-width: 600px) {

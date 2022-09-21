@@ -51,7 +51,7 @@ export default function GameList({ idType,setDisplay, setGameDescription }) {
         ""
       )}
       <div className={Style.GameList}>
-        <h1 className={Style.h1}>GameList</h1>
+        <h1 className={Style.h1}>Liste de jeu:</h1>
 
         <div>
           {games.map((game, index) => (
