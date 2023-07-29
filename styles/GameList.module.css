@@ -16,6 +16,10 @@
     color: gray;
 }
 
+.button:hover {
+    cursor: pointer;
+}
+
 .h1 {
     background-color: red;
     margin: 0px;

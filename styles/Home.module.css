@@ -6,6 +6,7 @@
   align-items: center;
   height: fit-content;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 .img {
   animation: roulade 1s infinite linear;
